@@ -1,0 +1,96 @@
+body {background:#f8f8f9;}
+h1 {text-shadow:2px 3px 1px #ccc;}
+h1,h2,h3,h4 {font-family: 'Bree Serif', serif;}
+#select-file {display:none;}
+
+
+.list-container{
+    text-align: center;
+}
+.midi-list {
+    cursor: default;
+    background-color: #FDFCF9;
+    -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+    box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+    padding: 10px 0 10px 0;
+}
+.play-panel {
+    padding: 5px 0 5px 0;
+    -webkit-box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+    box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+}
+.midi-name {
+    font-size: 1.7rem;
+}
+.ecouter {
+    color:#32bb79;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.cus-icon {
+    font-size: 3rem;
+    padding-right: 10px;
+}
+.ecouter:hover {
+    color: green;
+}
+.id {
+    padding-bottom: 15px;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.small-font {
+    font-size: 1.4rem;
+}
+.grey-font {
+    color: grey;
+}
+.play-panel {
+    background-color: #B6B0A5;
+}
+button {
+    border: none;
+    padding: 0.6rem 0 0.6rem 2.8rem;
+    /* padding-left: 2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem; */
+    margin: auto;
+}
+.progress {
+    margin-top: 1.55rem;
+}
+.slider-bar {
+    width: 180px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    background-color: #948f86;
+}
+.play-state {
+    margin-top: 1rem;
+    border-radius: 7px;
+    background-color: #D5D1CB; 
+}
+.pg-bg {
+    background-color: #D5D1CB;
+}
+.left-number {
+    position: absolute;
+    left: 0;
+    margin-left: 35px;
+}
+.right-number {
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+}
+.center-number {
+    position: absolute;
+    right: 50%;
+    margin-right: -12px;
+    margin-top: -3px;
+}
+.img-view {
+    width: 100%
+}
