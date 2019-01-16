@@ -5,3 +5,4 @@ module
 browser
 
 package-lock.json
+yarn.lock
