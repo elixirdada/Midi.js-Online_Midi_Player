@@ -38,8 +38,9 @@ var buildTracksHtml = function() {
 	});
 }
 //FluidR3_GM, MusyngKite
+// http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/
 //https://cindyjs.org/dist/v0.8.7/soundfonts/   https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/
-Soundfont.instrument(ac, 'http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/acoustic_grand_piano-ogg.js').then(function (instrument) {
+Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-ogg.js').then(function (instrument) {
 	document.getElementById('loading').style.display = 'none';
 
 	loadFile = function() {
@@ -54,7 +55,7 @@ Soundfont.instrument(ac, 'http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/
 				if (event.name == 'Note on') {
 					instrument.play(event.noteName, ac.currentTime, {gain:event.velocity/100});
 					//document.querySelector('#track-' + event.track + ' code').innerHTML = JSON.stringify(event);
-        }
+        		}
 
 				document.getElementById('tempo-display').innerHTML = Player.tempo;
 				// document.getElementById('file-format-display').innerHTML = Player.format;
@@ -76,9 +77,8 @@ Soundfont.instrument(ac, 'http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/
 				instrument.play(event.noteName, ac.currentTime, {gain:event.velocity/100});
 				//document.querySelector('#track-' + event.track + ' code').innerHTML = JSON.stringify(event);
 				//console.log(event);
-      }
-
-      document.getElementById('tempo-display').innerHTML = Player.tempo;
+      		}
+      		document.getElementById('tempo-display').innerHTML = Player.tempo;
 			// document.getElementById('file-format-display').innerHTML = Player.format;	
 			document.getElementById('play-bar').style.width = 100 - Player.getSongPercentRemaining() + '%';
 		});
@@ -101,11 +101,11 @@ Soundfont.instrument(ac, 'http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/
 			$.get(serverUrl + index,
 				function(data, status){
 					if(status = "success" ){
-            $('.play-state').text(data.name);
-            $('.speed-range').text(data.name);
-            $('.speed').text(index);
-            $('.slider-bar').val(index);
-          }
+						$('.play-state').text(data.name);
+						$('.speed-range').text(data.name);
+						$('.speed').text(index);
+						$('.slider-bar').val(index);
+					}
 					else
 						return;
 				}
