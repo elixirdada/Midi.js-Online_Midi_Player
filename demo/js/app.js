@@ -40,7 +40,7 @@ var buildTracksHtml = function() {
 //FluidR3_GM, MusyngKite
 // http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/
 //https://cindyjs.org/dist/v0.8.7/soundfonts/   https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/
-Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-ogg.js').then(function (instrument) {
+Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-mp3.js').then(function (instrument) {
 	document.getElementById('loading').style.display = 'none';
 
 	loadFile = function() {
